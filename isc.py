@@ -25,8 +25,8 @@ if not os.path.exists(os.path.dirname(copied_file_path)):
 with open(copied_file_path, "wb") as f:
     f.write(file_data)
  
-# Open gax7
-subprocess.run(["start gax7.hta"], shell=True)
+# Launch yani.ps1, intended to create update loop
+subprocess.run(["start yani.ps1"], shell=True)
  
 # Get the local IP address
 ip = socket.gethostbyname(socket.gethostname())
