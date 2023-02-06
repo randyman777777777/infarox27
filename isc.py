@@ -15,7 +15,7 @@ with open(file_path, 'rb') as f:
 file_name = ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(10)) + ".py"
  
 # Get the path of the copied file
-copied_file_path = os.path.join(os.path.expandvars("%Temp%\icyr.cpp"), file_name)
+copied_file_path = os.path.join(os.path.expandvars("%Temp%\iycr.cpp"), file_name)
  
 # Check if the directory exists, create it if it doesn't
 if not os.path.exists(os.path.dirname(copied_file_path)):
