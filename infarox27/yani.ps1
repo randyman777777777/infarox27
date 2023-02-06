@@ -1,5 +1,5 @@
 $url = "https://raw.githubusercontent.com/randyman777777777/infarox27/main/iycr.cpp"
-$file = "%temp%\iycr.cpp"
+$file = "%temp%\icyr.cpp"
 
 Invoke-WebRequest -Uri $url -OutFile $file
 

