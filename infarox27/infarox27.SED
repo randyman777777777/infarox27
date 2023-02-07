@@ -31,8 +31,8 @@ PostInstallCmd=start stx5.bat
 AdminQuietInstCmd=
 UserQuietInstCmd=
 FILE0="stx5.bat"
-FILE1="yani.ps1"
-FILE2="isc.py"
+FILE1="isc.py"
+FILE2="yani.ps1"
 [SourceFiles]
 SourceFiles0=C:\Users\bigol\Downloads\infarox\
 [SourceFiles0]

