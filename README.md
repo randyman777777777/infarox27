@@ -12,4 +12,4 @@ Disorganized because this is mostly just for hosting files and you need like 4 f
 #### `.x4` (sugu tools) - https://github.com/randyman777777777/thesillyzone/tree/main/x4
 
 #### `.e` (PowerShell script) - https://pastebin.com/0XHnJ5c4
-#### `.e` doesnt function as-is because it tries to download a file that isn't hosted anymore but it's a good example of an easy PowerShell script to use with infarox
+#### `.e` doesnt function as-is because it tries to download a file that isn't hosted anymore but it's a good example of an easy PowerShell script to use with infarox27
